@@ -1887,3 +1887,106 @@ ul.slides li {
     margin: 0;
     font-style: normal;
 }
+
+/* Status Paragraph Styles */
+.statusYem {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    padding: 20px 30px;
+    border-radius: 8px;
+    margin: 25px 0;
+    border-left: 4px solid #e74c3c;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    line-height: 1.8;
+    color: #ffffff;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.statusYem :hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #34495e, #2980b9);
+}
+
+.statusYem ::before {
+    content: "•";
+    color: #e74c3c;
+    font-size: 28px;
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .statusYem {
+        padding: 15px 25px;
+        margin: 20px 0;
+        font-size: 14px;
+    }
+}
+
+/* Membership Section Styles */
+#membership {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.membership-item {
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.membership-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.membership-content i {
+    font-size: 40px;
+    color: #E04343;
+    margin-bottom: 20px;
+}
+
+.membership-content h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.membership-content p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.membership-date {
+    display: inline-block;
+    background: #f0f0f0;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .membership-item {
+        padding: 20px;
+    }
+    
+    .membership-content h3 {
+        font-size: 20px;
+    }
+    
+    .membership-content p {
+        font-size: 14px;
+    }
+}
