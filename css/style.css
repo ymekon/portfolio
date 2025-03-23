@@ -797,61 +797,76 @@ section h2 {
 .social-link {
     display: inline-flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 12px 25px;
     background: #f8f9fa;
     border-radius: 8px;
     color: #37474f;
     text-decoration: none;
     transition: all 0.3s ease;
     border: 1px solid #e9ecef;
-    min-width: 180px;
+    min-width: 200px;
+    margin-bottom: 15px;
 }
 
 .social-link:hover {
-    background: #ffffff;
     transform: translateY(-2px);
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-    color: #1a237e;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     text-decoration: none;
-    border-color: #3498db;
+}
+
+.social-link.linkedin {
+    background: #0077b5;
+    color: white;
+    border-color: #0077b5;
+}
+
+.social-link.linkedin:hover {
+    background: #006097;
+    border-color: #006097;
+    color: white;
+}
+
+.social-link.github {
+    background: #333;
+    color: white;
+    border-color: #333;
+}
+
+.social-link.github:hover {
+    background: #24292e;
+    border-color: #24292e;
+    color: white;
+}
+
+.social-link.stackoverflow {
+    background: #f48024;
+    color: white;
+    border-color: #f48024;
+}
+
+.social-link.stackoverflow:hover {
+    background: #e67e22;
+    border-color: #e67e22;
+    color: white;
 }
 
 .social-link i {
-    font-size: 16px;
-    margin-right: 10px;
-    width: 16px;
+    font-size: 20px;
+    margin-right: 12px;
+    width: 20px;
     text-align: center;
 }
 
 .social-link span {
-    font-size: 1em;
     font-weight: 500;
+    font-size: 16px;
 }
 
 @media (max-width: 768px) {
-    .contact-info {
-        padding: 20px;
-    }
-    
-    .contact-item {
-        display: flex;
-        margin: 0 0 10px 0;
-        padding: 10px;
-        min-width: 100%;
-    }
-    
-    .contact-item i {
-        padding: 8px;
-        font-size: 16px;
-    }
-    
-    .social-grid {
-        flex-direction: column;
-    }
-    
     .social-link {
-        width: 100%;
-        padding: 10px;
+        padding: 10px 20px;
+        min-width: 100%;
+        margin-bottom: 10px;
     }
 }
 
@@ -1989,4 +2004,98 @@ ul.slides li {
     .membership-content p {
         font-size: 14px;
     }
+}
+
+/* Highlighted Phrases Styles */
+.highlight-phrase {
+    display: inline-block;
+    background: linear-gradient(120deg, rgba(224, 67, 67, 0.1), rgba(224, 67, 67, 0.2));
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin: 5px 0;
+    font-weight: 600;
+    color: #E04343;
+    box-shadow: 0 2px 5px rgba(224, 67, 67, 0.1);
+    transition: all 0.3s ease;
+}
+
+.highlight-phrase:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(224, 67, 67, 0.2);
+    background: linear-gradient(120deg, rgba(224, 67, 67, 0.2), rgba(224, 67, 67, 0.3));
+}
+
+/* Enhanced Testimonial Styles */
+.testimonial-item {
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.testimonial-item::before {
+    content: '"';
+    font-size: 120px;
+    color: rgba(224, 67, 67, 0.1);
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    font-family: Georgia, serif;
+}
+
+.testimonial-content {
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.testimonial-author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 3px solid #E04343;
+}
+
+.testimonial-author-info h4 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.testimonial-author-info p {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+}
+
+.testimonial-rating {
+    color: #ffd700;
+    margin: 10px 0;
+}
+
+.testimonial-rating i {
+    margin-right: 2px;
 }
