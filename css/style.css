@@ -1950,46 +1950,90 @@ ul.slides li {
 }
 
 .membership-item {
-    background: #fff;
-    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
     margin-bottom: 30px;
-    border-radius: 10px;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
-    text-align: center;
+    border: 1px solid #e9ecef;
 }
 
 .membership-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
-.membership-content i {
-    font-size: 40px;
-    color: #E04343;
-    margin-bottom: 20px;
+.membership-content {
+    text-align: center;
 }
 
-.membership-content h3 {
-    color: #333;
+.membership-logo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #e9ecef;
+}
+
+.membership-logo img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.membership-content h4 {
+    color: #2c3e50;
     font-size: 24px;
     margin-bottom: 10px;
+    font-weight: 600;
 }
 
 .membership-content p {
-    color: #666;
-    font-size: 16px;
-    line-height: 1.6;
+    color: #6c757d;
     margin-bottom: 15px;
 }
 
-.membership-date {
-    display: inline-block;
-    background: #f0f0f0;
-    padding: 5px 15px;
-    border-radius: 20px;
-    color: #666;
+.membership-details {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.membership-details p {
+    margin: 8px 0;
+    color: #495057;
     font-size: 14px;
+}
+
+.membership-details i {
+    color: #0077b5;
+    margin-right: 8px;
+    width: 16px;
+}
+
+.btn-outline-primary {
+    color: #0077b5;
+    border-color: #0077b5;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background: #0077b5;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-outline-primary i {
+    margin-right: 5px;
 }
 
 @media (max-width: 768px) {
@@ -1997,12 +2041,13 @@ ul.slides li {
         padding: 20px;
     }
     
-    .membership-content h3 {
-        font-size: 20px;
+    .membership-logo {
+        width: 100px;
+        height: 100px;
     }
     
-    .membership-content p {
-        font-size: 14px;
+    .membership-content h4 {
+        font-size: 20px;
     }
 }
 
